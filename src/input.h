@@ -55,6 +55,7 @@ namespace OFCT {
         }
 
         // `username`,`number`
+        users.reserve(M * N);
         while(std::getline(file, line)) {
             size_t const l = line.length();
             for(size_t i = 0; i < l; i++) {

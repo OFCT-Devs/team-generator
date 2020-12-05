@@ -1,5 +1,5 @@
 echo "Initializing...\n"
-cd or-tools_Ubuntu-20.04-64bit_v8.0.8283
+cd or-tools
 
 make run SOURCE=../src/main.cc
 
