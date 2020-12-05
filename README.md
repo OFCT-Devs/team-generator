@@ -7,15 +7,13 @@ Given mmr(Match Making Rating) of each players, this program generates a team th
 The current project is known to compile with `g++ 10.2.0` under `Ubuntu 20.04`.
 
 ## Compile
-First, open the terminal and clone the repository.
+Open the terminal and clone the repository.
 If you don't have git installed, just download the code from the [github repo](https://github.com/OFCT-Devs/ofct-matchbot).
 ```shell script
 git clone https://github.com/OFCT-Devs/team-generator.git
+cd team-generator/or-tools
+make test_cc
 ```
-
-In directory `team-generator`, follow the instructions written in [or-tools installation guide](https://developers.google.com/optimization/install/cpp/linux#ubuntu-20.04-lts).
-The extracted folder should be in the directory `team-generator`.
-Also, rename the folder as `or-tools`.
 
 ## Run
 
@@ -54,3 +52,7 @@ usera2_name,usera2_mmr,userb2_name,userb2_mmr, ... ,userN2_name,userN2_mmr,
 useraM_name,useraM_mmr,userbM_name,userbM_mmr, ... ,userNM_name,userNM_mmr,
 ,team 1 sum,,team 2 sum,, ... ,,team N sum,
 ```
+
+## License
+Check `LICENSE`.
+Also, `or-tools/Makefile` is modified from the original; all occurences of `c++17` is changed to `c++20`.

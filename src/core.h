@@ -12,7 +12,7 @@ namespace OFCT {
       uint32_t N /* Number of teams OR Number of people in each seed */) {
         using namespace operations_research;
         auto const infinity = MPSolver::infinity();
-        
+
         MPSolver solver("OFCT_mip_team_generator", MPSolver::SCIP_MIXED_INTEGER_PROGRAMMING);
 
         auto const upper = solver.MakeIntVar(0.0, infinity, "upper");
