@@ -31,7 +31,7 @@ namespace OFCT {
     }
 
     std::ostream &operator<<(std::ostream &os, user const &user) {
-        os << user.username << ":\t" << user.mmr << '\t';
+        os << user.username << ',' << user.mmr << ',';
         return os;
     }
 }
