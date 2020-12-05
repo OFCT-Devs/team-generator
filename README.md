@@ -4,7 +4,7 @@ Given mmr(Match Making Rating) of each players, this program generates a team th
 
 ## Prerequisites
 
-The current project is known to compile with `gcc 10.2.0` under `Ubuntu 20.04`.
+The current project is known to compile with `g++ 10.2.0` under `Ubuntu 20.04`.
 
 ## Compile
 First, open the terminal and clone the repository.
